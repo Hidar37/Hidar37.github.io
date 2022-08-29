@@ -1,0 +1,580 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Header And Headline Section Style */
+
+/* Headliner */
+section.headline {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/backgroundImage2x.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headline .headline-title,
+.headline .headline-title h1 span {
+  font-weight: 900;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #172b4d;
+}
+
+.headline-title h1 span.name {
+  display: block;
+  margin-top: 3rem;
+}
+
+.headline-title h1 span.job {
+  color: #36b37e;
+}
+
+.headline-description {
+  width: 83%;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+}
+
+.headline-description .description-text {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 1.1rem;
+  color: #172b4d;
+  line-height: 1.3rem;
+}
+
+.headline-media {
+  display: flex;
+  justify-content: center;
+}
+
+.headline-media li {
+  list-style-type: none;
+}
+
+.headline-media .social-icon {
+  padding: 2.5rem 0.6rem;
+  font-size: 1.3rem;
+  color: #505f79;
+  transition: all 0.3s;
+}
+
+.headline-media .social-icon:hover {
+  font-size: 1.5rem;
+  color: #36b37f;
+}
+
+.headline-down-arrow {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.headline-down-arrow .down-arror-icon {
+  border: 1px solid #d0d9d4;
+  color: #172b4d;
+  border-radius: 50%;
+  padding: 0.8rem 0.9rem;
+  transition: all 0.3s;
+}
+
+.headline-down-arrow .down-arror-icon:hover {
+  background-color: #36b37f;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .logo p {
+  font-weight: 900;
+  font-style: normal;
+  animation-name: logo-transition;
+  animation-duration: 2s;
+}
+
+@keyframes logo-transition {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header .logo p .logo-link {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+header .humburger i {
+  font-size: 1.3rem;
+  padding: 0.4rem;
+}
+
+/* Recent Work */
+.work-container h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #172b4d;
+  line-height: 3rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.work-container h1::after {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  content: " ";
+  background-color: #36b37e;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  margin-left: 48%;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 4rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #e3ece7;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.card ul li {
+  list-style-type: none;
+}
+
+.card ul li,
+.card .img-card-link {
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.card-img a img {
+  width: 100%;
+  border: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  padding-top: 1rem;
+}
+
+.card-title p .card-title-link {
+  font-size: 1.5rem;
+}
+
+.card-desc ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 0.8rem;
+}
+
+.card-desc ul li a {
+  margin-right: 0.4rem;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  background-color: #ebf0ee;
+  border-radius: 0.2rem;
+  color: #3a4a42;
+  transition: all 0.3s;
+}
+
+.card-desc ul li a:hover {
+  background-color: #d4d6d5;
+}
+
+.card-btn {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.card-btn p .btn-link {
+  background-color: #36b37e;
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.card-btn p .btn-link:hover {
+  background-color: #03613b;
+}
+
+.card-btn p .btn-link:active {
+  background-color: #008552;
+}
+
+/* About me */
+.about-container {
+  margin: 3rem 1rem 2rem;
+  color: #172b4d;
+  text-align: center;
+  background-image: url("../images/air-tail.svg"), url("../images/air-front.svg ");
+  background-repeat: no-repeat;
+  background-position: 0% 90%, 110% -28%;
+}
+
+.info h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.info .work-bio {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: #42526e;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.info .cv {
+  padding: 1.5rem;
+}
+
+.info .cv .cv-link {
+  text-decoration: none;
+  background-color: #36b37e;
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.info .cv .cv-link:hover {
+  background-color: #03613b;
+}
+
+.info .cv a:active {
+  background-color: #008552;
+}
+
+/* SOFT SKILL */
+.soft-skill .card-desc ul {
+  flex-wrap: wrap;
+}
+
+.soft-skill .card {
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+}
+
+.soft-skill .card .card-img a .globe {
+  font-size: 3rem;
+  padding: 2rem 1rem 2.5rem;
+}
+
+.soft-skill .card-title p .soft-card-title-link {
+  color: #42526e;
+}
+
+.soft-skill .card-desc ul li {
+  margin-top: 1.1rem;
+}
+
+.soft-skill .card-desc ul li .lang-link {
+  background-color: #fff;
+  color: #36b37f;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  transition: all 0.3s;
+}
+
+.soft-skill .card-desc ul li .lang-link:hover {
+  background-color: rgb(212, 211, 211);
+  color: #0ddd86;
+}
+
+/* Contact form section */
+.form-container {
+  background-image: url("/images/Frame.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 3rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container h2.slogan {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #172b4d;
+  line-height: 3rem;
+  position: relative;
+  margin: 3rem 0.4rem 4rem;
+  width: 100%;
+}
+
+.form-container input,
+textarea,
+button {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5em;
+  border: 1px solid #d0d9d4;
+  outline: none;
+  width: 100%;
+}
+
+.form-container input:focus,
+textarea:focus {
+  border: 1px solid #60c095;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.footer-media {
+  margin-top: 2rem;
+}
+
+.footer-media i.social-icon {
+  padding: 0 0.8rem;
+}
+
+.form-container button {
+  background: #36b37f;
+  color: #fff;
+  display: block;
+  width: 140px;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 auto;
+  border: none;
+  transition: all 0.3s;
+}
+
+.form-container .in_touch_btn:active {
+  background-color: #008552;
+}
+
+.form-container .in_touch_btn:hover {
+  background-color: #03613b;
+}
+
+.footer p.email-p {
+  height: 20vh;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #42526e;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+/* Desktop Version Section */
+@media screen and (min-width: 768px) {
+  /* Header and Headliner */
+  section.headline {
+    justify-content: start;
+    background-image: url("../images/Header-llustration-desktop.svg");
+    height: 140vh;
+  }
+
+  .humburger,
+  .logo {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .headline .desktop-nav {
+    width: 100%;
+  }
+
+  .headline .desktop-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop-nav ul li {
+    margin-right: 3rem;
+  }
+
+  .desktop-nav ul li .desktop-link {
+    color: #42526e;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: all 1s;
+  }
+
+  .desktop-nav ul li .desktop-link:hover {
+    font-size: 1.2rem;
+    color: #36b37f;
+  }
+
+  /* Headliner */
+  .headline .headline-title,
+  .headline .headline-title h1 span {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+
+  .headline-description {
+    width: 53%;
+  }
+
+  .headline-media .social-icon {
+    padding-top: 0;
+  }
+
+  /* Recent Work */
+  .work-container h1 {
+    margin-top: 5rem;
+  }
+
+  .work-container h1::after {
+    display: none;
+  }
+
+  /* Card */
+  .card-container {
+    grid-template-columns: auto auto auto;
+    gap: 24px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .card-title p .card-title-link {
+    font-size: 2rem;
+  }
+
+  /* About me dSection */
+  .about-container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/illustration\ about\ me\ desktop.svg"), url("../images/illustration-about-me-2-desktop.svg");
+    background-position: 30% 70%, 0 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .info h1 {
+    margin-bottom: 2rem;
+  }
+
+  .info .work-bio {
+    width: 53%;
+    margin: 0 auto 1rem;
+  }
+
+  /* Soft Skill */
+  .soft-skill .card-container {
+    grid-template-columns: 30% 30% 30%;
+    gap: 24px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .soft-skill .card-title p .card-title-link {
+    font-size: 2rem;
+  }
+
+  /* Form Section */
+  .form-container {
+    background-image: url("../images/illustration-1-contact-form-desktop-left.svg"), url("../images/illustration-2-contact-form-desktop-middle.svg"), url("../images/contact\ form-illustratoin-3-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 85%, 25% 75%, 100% 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .form-container h2.slogan {
+    width: 35%;
+    margin-right: 1rem;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .form-container form {
+    width: 50%;
+  }
+
+  .form-container input,
+  textarea {
+    padding: 0.8rem;
+  }
+
+  .form-container input::placeholder,
+  .form-container textarea::placeholder {
+    font-weight: 500;
+  }
+
+  .form-container button {
+    margin: 0;
+  }
+
+  .footer-media {
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-container::after {
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #dfe1e6;
+    display: block;
+    position: absolute;
+    top: 92%;
+  }
+
+  /* Footer */
+  footer {
+    display: none;
+  }
+}
