@@ -20,10 +20,6 @@ https://hidar37.github.io/
 
 - GitHub: [@Hidar37](https://github.com/Hidar37)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
