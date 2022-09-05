@@ -17,6 +17,15 @@
 </head>
 
 <body>
+  <!-- Adding navigation to mobile version -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <i class="fa-regular fa-x" id="humbarger"></i>
+    <ul>
+      <li><a href="#portfolio-section" class="mobile-link">Portfolio</a></li>
+      <li><a href="#about-section" class="mobile-link">About</a></li>
+      <li><a href="#contact-section" class="mobile-link">Contact</a></li>
+    </ul>
+  </nav>
   <section class="headline">
     <!-- START: Header Section (log & menu icon) -->
     <header>
@@ -26,14 +35,14 @@
       <!-- Desktop Nav -->
       <nav class="desktop-nav">
         <ul>
-          <li><a href="#" class="desktop-link">Portfolio</a></li>
-          <li><a href="#" class="desktop-link">About</a></li>
-          <li><a href="#" class="desktop-link">Contact</a></li>
+          <li><a href="#portfolio-section" class="desktop-link">Portfolio</a></li>
+          <li><a href="#about-section" class="desktop-link">About</a></li>
+          <li><a href="#contact-section" class="desktop-link">Contact</a></li>
         </ul>
       </nav>
       <!-- Mobile Nav -->
       <nav class="humburger">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" id="humbarger-mobile"></i>
       </nav>
     </header>
     <!-- END: Header Section (log & menu icon) -->
@@ -214,7 +223,7 @@
   <!-- END: My Recent Work Section -->
 
   <!-- START: About me Section -->
-  <section class="about-container">
+  <section class="about-container" id="about-section">
     <div class="info">
       <h1>About me</h1>
       <p class="work-bio">
@@ -230,7 +239,7 @@
   <!-- END: About me Section -->
 
   <!-- START: soft skill Section -->
-  <section class="work-container soft-skill">
+  <section class="work-container soft-skill" id="soft-skill">
     <!-- Card -->
     <div class="card-container">
       <!-- Card-1 -->
@@ -292,7 +301,7 @@
   <!-- END: soft skill Section -->
 
   <!-- START: Form Section -->
-  <section class="form-container">
+  <section class="form-container" id="contact-section">
     <h2 class="slogan">
       I'm always interested in hearing about new projects, so if you'd like to
       chat please get in touch.
@@ -324,10 +333,13 @@
   <!-- END: Form Section -->
 
   <!--Start: Footer Section -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <p class="email-p">hidarahmadjob@gmail.com</p>
   </footer>
   <!--Start: Footer Section -->
+
+  <!-- =================== Javascript -->
+  <script src="js/hamburger_effect.js"></script>
 
 </body>
 
