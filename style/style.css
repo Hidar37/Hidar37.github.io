@@ -91,7 +91,7 @@ section.headline {
   justify-content: center;
 }
 
-.headline-media ul {
+.headline-media li.media-link {
   list-style-type: none;
 }
 
