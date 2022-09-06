@@ -441,6 +441,11 @@ textarea:focus {
   padding: 20px 0;
 }
 
+/* ========================================== */
+
+
+/* ========================================= */
+
 /* Desktop Version Section */
 @media screen and (min-width: 768px) {
   /* Header and Headliner */
@@ -620,5 +625,23 @@ textarea:focus {
   /* Footer */
   footer {
     display: none;
+  }
+
+  /* POP */
+  .pop-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pop-img {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+  }
+
+  .pop-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
   }
 }
