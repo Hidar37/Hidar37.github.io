@@ -83,144 +83,8 @@
 
   <!-- START: My Recent Work Section -->
   <section id="move-top" class="work-container">
-    <h1 class="recent-work">My Recent Works</h1>
-    <!-- Card -->
-    <div class="card-container">
-      <!-- Card-1 -->
-      <div class="card">
-        <div class="card-img">
-          <a href="#" class="img-card-link"><img src="images/Img-Plaholder.svg" alt="Project Image" /></a>
-        </div>
-        <div class="card-title">
-          <p>
-            <a href="#" class="card-title-link">Multi-Post Stories Gain+Glory</a>
-          </p>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li><a href="#">Ruby on rails</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">HTML</a></li>
-          </ul>
-        </div>
-        <div class="card-btn">
-          <p><a href="#" class="btn-link">See Project</a></p>
-        </div>
-      </div>
-      <!-- Card-2 -->
-      <div class="card">
-        <div class="card-img">
-          <a href="#" class="img-card-link"><img src="images/Img-Plaholder.svg" alt="Project Image" /></a>
-        </div>
-        <div class="card-title">
-          <p>
-            <a href="#" class="card-title-link">Multi-Post Stories Gain+Glory</a>
-          </p>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li><a href="#">Ruby on rails</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">HTML</a></li>
-          </ul>
-        </div>
-        <div class="card-btn">
-          <p><a href="#" class="btn-link">See Project</a></p>
-        </div>
-      </div>
-      <!-- Card-3 -->
-      <div class="card">
-        <div class="card-img">
-          <a href="#" class="img-card-link"><img src="images/Img-Plaholder.svg" alt="Project Image" /></a>
-        </div>
-        <div class="card-title">
-          <p>
-            <a href="#" class="card-title-link">Multi-Post Stories Gain+Glory</a>
-          </p>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li><a href="#">Ruby on rails</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">HTML</a></li>
-          </ul>
-        </div>
-        <div class="card-btn">
-          <p><a href="#" class="btn-link">See Project</a></p>
-        </div>
-      </div>
-      <!-- Card-4 -->
-      <div class="card">
-        <div class="card-img">
-          <a href="#" class="img-card-link"><img src="images/Img-Plaholder.svg" alt="Project Image" /></a>
-        </div>
-        <div class="card-title">
-          <p>
-            <a href="#" class="card-title-link">Multi-Post Stories Gain+Glory</a>
-          </p>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li><a href="#">Ruby on rails</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">HTML</a></li>
-          </ul>
-        </div>
-        <div class="card-btn">
-          <p><a href="#" class="btn-link">See Project</a></p>
-        </div>
-      </div>
-      <!-- Card-5 -->
-      <div class="card">
-        <div class="card-img">
-          <a href="#" class="img-card-link"><img src="images/Img-Plaholder.svg" alt="Project Image" /></a>
-        </div>
-        <div class="card-title">
-          <p>
-            <a href="#" class="card-title-link">Multi-Post Stories Gain+Glory</a>
-          </p>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li><a href="#">Ruby on rails</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">HTML</a></li>
-          </ul>
-        </div>
-        <div class="card-btn">
-          <p><a href="#" class="btn-link">See Project</a></p>
-        </div>
-      </div>
-      <!-- Card-6 -->
-      <div class="card">
-        <div class="card-img">
-          <a href="#" class="img-card-link"><img src="images/Img-Plaholder.svg" alt="Project Image" /></a>
-        </div>
-        <div class="card-title">
-          <p>
-            <a href="#" class="card-title-link">Multi-Post Stories Gain+Glory</a>
-          </p>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li><a href="#">Ruby on rails</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">HTML</a></li>
-          </ul>
-        </div>
-        <div class="card-btn">
-          <p><a href="#" class="btn-link">See Project</a></p>
-        </div>
-      </div>
-    </div>
+    <!-- Everything is going to be added dynamicly -->
   </section>
-  <!-- END: My Recent Work Section -->
 
   <!-- START: About me Section -->
   <section class="about-container" id="about-section">
@@ -337,9 +201,42 @@
     <p class="email-p">hidarahmadjob@gmail.com</p>
   </footer>
   <!--Start: Footer Section -->
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="pop-img">
+        <img src="images/Snapshoot_Portfolio.svg" alt="Project Image" id="project-img">
+      </div>
+      <div class="pop-info">
+        <div class="pop-text">
+          <h5>Keeping track of hundreds of components</h5>
+        </div>
+        <div class="pop-icon">
+          <a href="https://hidar37.github.io/" class="pop-a">See live<i class="fas fa-eye"></i></a>
+          <a href="https://github.com/Hidar37/Hidar37.github.io" class="pop-a">See Source<i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="pop-lang">
+        <ul class="pop-ul">
+          <li><a href="#" class="pop-lang-a">Javascript</a></li>
+          <li><a href="#" class="pop-lang-a">Ruby</a></li>
+          <li><a href="#" class="pop-lang-a">HTML</a></li>
+          <li><a href="#" class="pop-lang-a">CSS</a></li>
+        </ul>
+      </div>
+      <div class="pop-desc">
+        <p class="pop-desc-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, delectus magni quasi incidunt aperiam soluta commodi esse odio maxime, fugit quis. Eaque dolorem iste qui corporis eos ratione, suscipit provident animi voluptates aperiam quisquam velit ad quibusdam possimus ea nam ipsam similique, nihil saepe officia praesentium. Accusantium iste ducimus fugiat fugit? Molestias quibusdam quis error? Doloribus molestiae aspernatur explicabo? Error!</p>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
 
   <!-- =================== Javascript -->
   <script src="js/hamburger_effect.js"></script>
+  <script src="js/pop_up_window.js"></script>
 
 </body>
 
