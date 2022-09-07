@@ -445,7 +445,7 @@ textarea:focus {
 .modal {
   position: fixed;
   top: 50%;
-  left: 25%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   border: 0;
@@ -453,8 +453,8 @@ textarea:focus {
   border-radius: 10px;
   z-index: 10;
   background-color: white;
-  width: 300px;
-  max-width: 40%;
+  width: 800px;
+  max-width: 80%;
 }
 
 .pop-lang ul.pop-ul {
@@ -477,7 +477,7 @@ textarea:focus {
 }
 
 .pop-desc {
-  margin-top: 1rem;
+  margin: 1rem 0 0 0;
 }
 
 .pop-desc p.pop-desc-p {
@@ -509,9 +509,7 @@ textarea:focus {
   font-size: 1.25rem;
   font-weight: bold;
   margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0.1rem;
+  padding: 0.5rem;
   width: 50px;
   background-color: #d0d5df;
 }
@@ -761,16 +759,6 @@ textarea:focus {
   }
 
   /* POP */
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    width: 700px;
-    max-width: 80%;
-  }
-
   .pop-info {
     flex-direction: row;
     justify-content: space-between;
