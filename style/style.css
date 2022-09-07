@@ -509,7 +509,9 @@ textarea:focus {
   font-size: 1.25rem;
   font-weight: bold;
   margin-left: auto;
-  padding: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.1rem;
   width: 50px;
   background-color: #d0d5df;
 }
