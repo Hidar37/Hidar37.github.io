@@ -170,10 +170,10 @@
       I'm always interested in hearing about new projects, so if you'd like to
       chat please get in touch.
     </h2>
-    <form action="https://formspree.io/f/xayknqor" method="POST">
-      <input type="text" name="name" placeholder="Enter Your Name" maxlength="30" required />
-      <input type="email" name="email" placeholder="Enter Your Email" required />
-      <textarea name="comment" cols="30" rows="7" maxlength="500" placeholder="Type your comment" required></textarea>
+    <form action="https://formspree.io/f/xayknqor" method="POST" id="form">
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" maxlength="30" required />
+      <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+      <textarea name="comment" id="comment" cols="30" rows="7" maxlength="500" placeholder="Type your comment" required></textarea>
       <button type="submit" class="in_touch_btn">Get in touch</button>
     </form>
     <ul class="headline-media footer-media">
@@ -201,6 +201,8 @@
     <p class="email-p">hidarahmadjob@gmail.com</p>
   </footer>
   <!--Start: Footer Section -->
+
+  <!-- POP-UP WINDOW -->
   <div class="modal" id="modal">
     <div class="modal-header">
       <button data-close-button class="close-button">&times;</button>
@@ -237,6 +239,7 @@
   <!-- =================== Javascript -->
   <script src="js/hamburger_effect.js"></script>
   <script src="js/pop_up_window.js"></script>
+  <script src="js/form-validation.js"></script>
 
 </body>
 

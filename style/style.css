@@ -575,6 +575,13 @@ textarea:focus {
   pointer-events: all;
 }
 
+/* Error Message */
+.error-message {
+  color: #f00;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
 /* ========================================= */
 
 /* Desktop Version Section */
