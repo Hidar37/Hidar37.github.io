@@ -445,7 +445,7 @@ textarea:focus {
 .modal {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   border: 0;
@@ -453,9 +453,8 @@ textarea:focus {
   border-radius: 10px;
   z-index: 10;
   background-color: white;
-  width: 800px;
-  max-width: 80%;
-  margin: 1rem;
+  width: 300px;
+  max-width: 40%;
 }
 
 .pop-lang ul.pop-ul {
@@ -478,7 +477,7 @@ textarea:focus {
 }
 
 .pop-desc {
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .pop-desc p.pop-desc-p {
@@ -760,6 +759,16 @@ textarea:focus {
   }
 
   /* POP */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    width: 700px;
+    max-width: 80%;
+  }
+
   .pop-info {
     flex-direction: row;
     justify-content: space-between;
