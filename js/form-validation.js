@@ -1,7 +1,30 @@
 /* eslint-disable linebreak-style */
+const nameField = document.getElementById('name');
+const emailField = document.getElementById('email');
+const commentField = document.getElementById('comment');
+const inputData = {
+  name: '',
+  email: '',
+  comment: '',
+};
+
+window.addEventListener('load', () => {
+  // Retrive the JSON string
+  const jsonString = localStorage.getItem('inputData');
+  // Parse the JSON string back to JS object using JSON
+  const retriveObject = JSON.parse(jsonString);
+  // Add input data to input fields
+  nameField.value = retriveObject.name;
+  emailField.value = retriveObject.email;
+  commentField.value = retriveObject.comment;
+});
+
 document.getElementById('form').addEventListener('submit', (event) => {
-  const emailField = document.getElementById('email').value;
-  if (emailField.toLowerCase() === emailField) {
+  if (emailField.value.toLowerCase() === emailField.value) {
+    inputData.name = nameField.value;
+    inputData.email = emailField.value;
+    inputData.comment = commentField.value;
+    localStorage.setItem('inputData', JSON.stringify(inputData));
     return true;
   }
 
