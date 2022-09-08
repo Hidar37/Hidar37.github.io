@@ -2,14 +2,14 @@
 const nameField = document.getElementById('name');
 const emailField = document.getElementById('email');
 const commentField = document.getElementById('comment');
-/*This is the local storage object that contains all the data */ 
+// This is the local storage object that contains all the data
 const inputData = {
   name: '',
   email: '',
   comment: '',
 };
 
-/*If the local storage has values then set the value of input*/ 
+// If the local storage has values then set the value of input
 window.addEventListener('load', () => {
   // Retrive the JSON string
   const jsonString = localStorage.getItem('inputData');
@@ -30,7 +30,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
     return true;
   }
 
-  /*if the user used uppercase letters in the email input display this*/ 
+  // if the user used uppercase letters in the email input display this
   const myForm = document.getElementById('form');
   const addP = document.createElement('p');
   addP.setAttribute('class', 'error-message');
