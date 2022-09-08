@@ -21,12 +21,26 @@ window.addEventListener('load', () => {
   commentField.value = retriveObject.comment;
 });
 
+// Make change to name in local Storage once the user type something
+nameField.addEventListener('change', () => {
+  inputData.name = nameField.value;
+  localStorage.setItem('inputData', JSON.stringify(inputData));
+});
+
+// Make change to email in local Storage once the user type something
+emailField.addEventListener('change', () => {
+  inputData.email = emailField.value;
+  localStorage.setItem('inputData', JSON.stringify(inputData));
+});
+
+// Make change to comment in local Storage once the user type something
+commentField.addEventListener('change', () => {
+  inputData.comment = commentField.value;
+  localStorage.setItem('inputData', JSON.stringify(inputData));
+});
+
 document.getElementById('form').addEventListener('submit', (event) => {
   if (emailField.value.toLowerCase() === emailField.value) {
-    inputData.name = nameField.value;
-    inputData.email = emailField.value;
-    inputData.comment = commentField.value;
-    localStorage.setItem('inputData', JSON.stringify(inputData));
     return true;
   }
 
